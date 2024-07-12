@@ -1,0 +1,124 @@
+/*size-container*/
+html, body {
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  /*header*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    border: solid;
+    align-items: center;
+    background : #fffc00;
+  }
+  div{
+    border: solid blue;
+  }
+
+  nav{
+    border: solid red;
+  }
+  /*contenu principal*/
+  main{
+    border: solid green;
+    background-color: #fffc00;
+    display: flex;
+    height: 1000px;
+  }
+  article{
+    border: solid purple 4px;
+    width: 1000px;
+    background: white;
+    height: 40em;
+    width: 70em;
+    margin-top: 10em;
+    margin-left: 10em;
+  }
+
+
+  li{
+    padding-left: 8px;
+  }
+  a{ 
+    color :black;
+    font-weight: bold }
+.paragraphe-1{
+    padding-left: 40%;
+}
+.paragraphe-2{
+    padding-right: 40%;
+    color: white;
+}
+h1{
+    font-size: 60px;
+    padding-left: 30px
+}
+h1::before{
+    content: '</>';
+    color: #ff4757;
+    font-weight:bolder
+}
+/*aside, reference*/
+aside{
+    border: solid green 5px;
+    margin-top : 10em ;
+    margin-bottom: 10em
+    padding-top 20em;
+    padding-bottom: 20em;
+    margin-left: 10em;
+    background-color: white;
+    height: 40em;
+    display: flex;
+    width: 30em;
+    align-items: center;
+}
+.liste{
+    border: grey solid 2px;
+    background: lightgrey;
+    margin: 5px;
+    text-align: center;
+}
+.puces{
+    display: flex;
+    flex-direction : column-reverse;
+    justify-content: center
+}
+.image-huan{
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+    float: left;
+    margin-right: 10px;
+}
+.image-susana{
+    width:75%;
+    height: 75%;
+    object-fit: contain;
+    position: relative;
+    left: 15px
+}
+  /*footer*/
+  footer{
+    background-color: black;
+    color :  #fffc00;
+    height : 700px;
+  }
+ 
+.link{
+    color: #fffc00;
+}

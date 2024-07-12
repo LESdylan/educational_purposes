@@ -1,0 +1,26 @@
+
+/*const centerX = canvas.width / 2;
+const centerY = canvas.height / 2;
+const radius = 100;
+const waveAmplitude = 20;
+const frequency = 8;
+
+function drawDeformedCircle() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.beginPath();
+  for (let angle = 0; angle <= Math.PI * 2; angle += 0.01) {
+    let r = radius + waveAmplitude * Math.sin(frequency * angle);
+    let x = centerX + r * Math.cos(angle);
+    let y = centerY + r * Math.sin(angle);
+    if (angle === 0) {
+      ctx.moveTo(x, y);
+    } else {
+      ctx.lineTo(x, y);
+    }
+  }
+  ctx.closePath();
+  ctx.stroke();
+}
+
+drawDeformedCircle();
+*/

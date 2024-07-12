@@ -1,0 +1,22 @@
+/*
+balise {
+    propriété-css: valeur
+}
+
+*/
+
+body{
+    background-color: tomato;
+}
+/* dry: don't repeat yourself*/
+/* sélectionner plusieurs éléments avec une virgule : */
+h1, h2, h3, h4, H5, H6, p{color: purple
+    ;}
+    /*sélectionner uplusieurs éléments grâce à l'attribut class*/
+.blanc{color : white}
+.bleue{color: rgba(rgba(250, 239, 239, 0.801), rgb(81, 116, 150), rgb(45, 145, 50), 70%);}
+.italic-blue{color:rgb(53, 137, 221); font-style: italic;}
+.opacite{opacity: 0.2}
+/*sélectionner via un autre attribut <id>*/
+/*class pour CSS ID pour javascrypt
+#opacite

@@ -1,0 +1,20 @@
+@media screen and (min-width: 300px) {
+    
+}
+@media screen and (min-width: 700px) {
+    .heading{
+       flex-direction:column;
+    }
+}
+@media screen and (min-width: 1000px) {
+
+}
+@media screen and (min-width: 1300px) {
+
+}
+@media screen and (min-width: 1600px) {
+
+}
+@media screen and (min-width: 2000px) {
+
+}

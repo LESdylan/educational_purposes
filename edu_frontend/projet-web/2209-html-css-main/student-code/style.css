@@ -1,0 +1,103 @@
+body{
+    background-color: aqua;
+    
+}
+section.intro p{
+    background-color: black;
+    color: white;
+}
+h1{
+    background-color: grey;
+    text-align: center;
+
+}
+.center{
+    text-align: center
+}
+.right{
+    text-align: right
+}
+.left{text-align: left}
+
+/*Flex*/
+/*.intro{
+    border: solid 1px green;
+    background-color:bisque;
+}
+.flex{
+    border: solid 2px red;
+    background-color: azure;
+    text-align: center; 
+}
+.cover{
+    display: flex;
+}
+.title{
+    text-align: center;
+}
+.bloc{
+    padding: 10px;
+    background-color: red;
+    margin:20px
+}
+.image{
+    width: 50px;
+    height: auto;
+}
+.text{
+    order: 5
+}*/
+.flex-container/*section*/{
+    padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid silver;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex
+}
+.nowrap{
+    -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/*div/*section's part{
+    display: flex;
+    border: 1px red solid;
+    flex-wrap: wrap-reverse;
+    width: auto;
+    height: auto;
+    overflow: auto;
+
+
+}
+.image/*image{
+    background-color: green;
+}
+.title/*the title's section{
+    background-color: blanchedalmond;
+}
+.cover/*the cover of the main section{
+    background-color: brown;
+}
+.text/*text{
+    background-color: blueviolet;
+}
+.reference{
+    position: relative;
+    background-color: white;
+    color: red;
+    text-decoration:overline;
+    padding-top:100px;
+    padding-left: 100px;
+    font-size: 20px;
+}
+.video{
+    background-color: chartreuse;
+}
+html{
+    with : 700px;
+}*/

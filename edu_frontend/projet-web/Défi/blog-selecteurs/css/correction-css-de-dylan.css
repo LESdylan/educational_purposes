@@ -1,0 +1,121 @@
+html, body{
+    margin: 0
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+header{
+    background: #fffc00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+header i, header h1{
+    font-size: 6em;
+    margin : 0 5px;
+}
+li{list-style-type: none;}
+header li{
+    margin: 0 10px;
+}
+header ul{
+    display: flex;
+    font-weight: 700;
+}
+header a{
+    color: black
+}
+header a:hover{
+    background-color: #ff4757;
+}
+header H1::before{
+    content:'</>';
+    color:#ff4757;
+    font-weight: bolder;
+}
+/*content*/
+main{
+    display: flex;
+    background-color: #fffc00;
+    padding :5em;
+}
+section, aside{
+    background: white;
+    border: red solid 2px;
+    margin: 30px;
+    padding: 10px;
+    flex: 2;
+}
+.image{
+    height:auto;
+    width: 30%;
+    border: solid 5px;
+}
+.illustration{
+    height: auto;
+    width: 30%;
+    border: solid 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  /*image de huan*/
+  .image-text-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .text{
+    display:flex;
+    flex-grow: 1
+  }
+  /*image de susana*/
+  .image-text-wrapper img {
+    width: 300px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px; /* Marge entre l'image et le texte */
+  }
+  
+  
+  .text h2,
+  .text p {
+    margin: 0;
+    font-size: em;
+}
+aside{
+    flex:1
+}
+aside ul {
+    display: flex;
+    flex-direction: column;
+}
+aside li {
+    flex : 1;
+    align-self: stretch;
+    background: #ececec;
+    margin: 5px;
+    padding: 10px;
+}
+p{
+    text-align: justify;
+    width: 40em;
+    border: yellow solid 2px;
+}
+.float-left{
+    float:left;
+}
+.float-right{
+    float:right;
+}
+section{
+    align-items:flex-start
+}

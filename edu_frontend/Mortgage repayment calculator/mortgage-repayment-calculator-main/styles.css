@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+:root {
+  --size-se-2nd: 375px;
+  --background-primary: hsl(61, 70%, 52%);
+
+  --background-primary-alt: hsl(4, 69%, 50%);
+  --base-00: hsl(0, 0%, 100%);
+  --base-100: hsl(202, 86%, 94%);
+  --base-300: hsl(203, 41%, 72%);
+  --base-500: hsl(203, 41%, 72%);
+  --base-700: hsl(200, 24%, 40%);
+  --base-900: hsl(202, 55%, 16%);
+  --base-900-alt: hsl(202, 30%, 15%);
+  /*Typographie*/
+  /*font*/
+  --family-Jakarta: "Plus Jakarta Sans";
+  --weight-m: 500;
+  --weight-l: 700;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--family-Jakarta);
+}
+body {
+  width: var(--size-se-2nd);
+  margin: 0 auto;
+}
+ input{
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+ }
+
+h1{
+  color: var(--base-900);
+  font-weight: var(--weight-l);
+}
+header>p{
+  text-decoration: underline;
+  color: var(--base-700);
+  margin-top: 10px;
+}
+
+main, header{
+  padding: 0 20px;
+}
+label{
+  display:flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--base-700);
+}
+input[type="radio"]{
+  width: unset;
+  margin-left: 0.25rem;
+  margin-left: 0.5rem ;
+}
+
+.pad{
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin:10px 0;
+  padding: 10px 0px;
+  border: 1px solid var(--background-primary);
+  background-color: hsl(from rgb(255 0 0 / 0.8)  / 0.5);
+  border-radius: 5px;
+}
+fieldset{
+  border: none;
+  padding: 20px 0;
+}
+
+input[type="submit"]{
+  border-radius: 20px;
+  background-color: var(--background-primary);
+  border: none;
+  color: var(--base-900);
+  font-weight: var(--weight-l);
+
+}
+
+footer{
+  background: var(--base-900);
+  color: #fff;
+  padding: 20px;
+}
+footer>p{
+  color: var(--base-500);
+  margin: 20px 0;
+}
+.card{
+  background-color: var(--base-900-alt);
+  border-top: var(--background-primary) solid 3px;
+  border-radius:5px;
+  padding: 15px;
+}
+.card p{
+font-size: 12px;
+color: var(--base-500)
+}
+.card p:last-of-type{
+  margin-top: 10px;
+}
+span:first-of-type{
+  color:var(--background-primary);
+  font-weight: var(--weight-m);
+  font-size: 30px;
+}
+span{
+  display: block;
+  margin: 10px  0px;
+}

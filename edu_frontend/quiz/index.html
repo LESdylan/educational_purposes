@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accessibility Quiz practice project" />
+  <title>Accessibility Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="flex-between-center">
+    <img id="logo" alt="freeCodeCamp" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+    <h1>HTML/CSS Quiz</h1>
+    <nav>
+      <ul class="flex-between-center">
+        <li><a href="#">INFO</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+      </ul>
+    </nav>
+
+
+  </header>
+  <form>
+    <h2>Student Info</h2>
+    <label for="student_name">Name:
+      <input type="text" id="student_name" placeholder="Jean michel" name="full name" required>
+    </label>
+    </div>
+    <div class="info">
+      <label for="student_email">email:
+        <input type="email" id="student_email" placeholder="email">
+      </label>
+    </div>
+    <div class="info">
+      <label for="dob">D.O.B.:
+        <input type="date" name="date of birthday">
+      </label>
+    </div>
+    <h2>HTML</h2>
+    <h3>1</h3>
+    <fieldset class="question-block">
+      <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
+      <label>
+        <input type="radio" />
+      </label>
+      <label>
+        <input type="radio" />
+      </label>
+    </fieldset>
+    <fieldset class="question-block">
+      <h3>2</h3>
+      <legend>A label element nesting an input element is required to have a for attribute witht the same value ass the
+        input's id</legend>
+      <label>
+        <input type="radio" />
+      </label>
+      <label>
+        <input type="radio" />
+      </label>
+    </fieldset>
+    <h2>CSS</h2>
+    <fieldset>
+      <label>Can the CSS property accept negative values ?</label>
+      <select>
+        <option>Select an option</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <input type="submit" value="Send">
+    </fieldset>
+  </form>
+  <footer>
+    <i><a href="freecodecamp">Free Code Camp</a></i>
+    <p><i>San Francisco</i></p>
+    <p><i>California</i></p>
+  </footer>
+</body>
+
+</html>

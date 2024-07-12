@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 id="title" class="text-center">Miss Haby survey form</h1>
+    <p id="description" class="text-center italic">It's time to collaborate, tell me about yourself!</p>
+  </header>
+
+  <form id="survey-form" action="/submit-evaluation" method="POST">
+
+    <fieldset class="form-set">
+      <label for="name" id="name-label">Name
+        <input type="text" id="name" name="identity" title="complete the name" placeholder="company name or people name"
+          required />
+      </label>
+    </fieldset>
+
+    <fieldset class="form-set">
+      <label for="email" id="email-label">Email
+        <input type="email" id="email" name="contact" title="email contact" required pattern=".+@outlook\.com"
+          placeholder="@example.com" multiple />
+      </label>
+    </fieldset>
+
+    <fieldset class="form-set">
+      <label for="number" class="number" id="number-label">Age (optional)
+        <input type="number" id="number" title="optional" min="18" max="64" pattern=""
+          placeholder="your age between 18 and 64 years old" />
+        <span class="validity"></span>
+      </label>
+    </fieldset>
+    <fieldset class="form-set">
+      <label for="phone_number"> Phone Number
+        <input class="error" type="tel" id="phone_number" name="phone"
+          pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" required>
+      </label>
+    </fieldset>
+    <fieldset class="form-set">
+      <legend>type of partnership</legend>
+      <label for="definitely" class="flex">
+        <input type="radio" name="recommendation" id="definitely" />
+        Sponsorship
+      </label>
+      <label for="maybe" class="flex">
+        <input type="radio" name="recommendation" id="maybe" />
+        Photography
+      </label>
+      <label for="not sure" class="flex">
+        <input type="radio" name="recommendation" id="not sure" />
+        Trip & Blogging
+      </label>
+      <label for="others" class="flex">
+        <input type="radio" name="recommendation" id="others" />
+        Publicity
+      </label>
+
+    </fieldset>
+
+
+    <fieldset class="form-set">
+      <label for="dropdown" class="custom-select">
+        Which option best describes your current role?
+        <select id="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option value="1">entrepreneur</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Full Time Learner</option>
+          <option value="4">company</option>
+          <option value="5">Other situation</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset class="form-set">
+      <label for="partnership_details">details of partnership offered:</label>
+      <textarea id="partnership_details" name="partnership_details" rows="4" cols="50" maxlength="200" required
+        placeholder="As en entrepreneur, I have been enrolled into many different kind of mission. I believe my qualifications are an asset for your project"></textarea>
+    </fieldset>
+
+
+    <fieldset class="form-set">
+      <legend>what's your area of expertise ?</legend>
+      <label for="front" class="flex">
+        <input type="checkbox" name="improvement" value="Research and development" />Research and development
+      </label>
+      <label for="back-end" class="flex">
+        <input type="checkbox" name="improvement" value="Marketing and promotion" />
+        Marketing and promotion
+      </label>
+      <label for="data-visualization" class="flex">
+        <input type="checkbox" name="improvement" value="product development" />
+        product development
+      </label>
+      <label for="challenge" class="flex">
+        <input type="checkbox" name="improvement" value="technologies and innovations" />
+        technologies and innovations
+      </label>
+      <label for="open_source" class="flex">
+        <input type="checkbox" name="improvement" value="Open Source Community" />
+        Open Source Community
+      </label>
+      <label for="git" class="flex">
+
+        <input type="checkbox" name="improvement" value="Durability and eco-conception" />
+        Durability and eco-conception
+      </label>
+      <label for="videos" class="flex">
+
+        <input type="checkbox" name="improvement" value="videography" />
+        Videography
+      </label>
+      <label for="meet" class="flex">
+
+        <input type="checkbox" name="improvement" value="photography" />
+        photography
+      </label>
+      <label for="wiki" class="flex">
+
+        <input type="checkbox" name="improvement" value="journalism" />
+        journalism
+      </label>
+      <label for="forum" class="flex">
+        <input type="checkbox" name="improvement" value="blog" />
+        blog
+      </label>
+      <label for="add_courses" class="flex">
+
+        <input type="checkbox" name="improvement" value="other" />
+        other
+      </label>
+    </fieldset>
+
+
+    <fieldset class="form-set">
+      <label for="bio">
+        Any comments or suggestions to improve my career, portfolio or website ?
+        <textarea cols="30" rows="5" id="bio" placeholder="Enter your comment here..." maxlength="200"></textarea>
+      </label>
+    </fieldset>
+    <fieldset class="form-set">
+      <input type="submit" value="Submit" name="submit" class="submit">
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

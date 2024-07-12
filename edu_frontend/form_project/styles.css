@@ -1,0 +1,146 @@
+:root {
+  --color-darkblue: #22223cd0;
+  --background-color: pink;
+  --background-primary-alt: rgba(146, 58, 158, 0.57);
+  --background-secondary-alt: rgba(0, 0, 93, 0.642);
+  --font-size: 1.1em;
+  --margin: 0;
+  --padding: 0;
+  --font-family: sans-serif;
+  --color-faint: #e5e5e5e8;
+  --color-white: #fff;
+  --view-height: 100vh;
+  --line-height: 1.4;
+  --size-xl: 100%;
+  --linear-gradient: linear-gradient(
+    115deg,
+    var(--background-primary-alt),
+    var(--background-secondary-alt)
+  );
+  --weight-xs: 200;
+  --weight-s: 400;
+  --weight-m: 600;
+  --weight-l: 800;
+  --rem-standard: 1rem;
+  --rem-0-25: 0.25rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  height: var(--view-height);
+  color: var(--color-faint);
+  line-height: var(--line-height);
+}
+body::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: var(--size-xl);
+  height: var(--size-xl);
+  background: var(--background-color);
+  background-image: var(--linear-gradient),
+    url("https://media.gqmagazine.fr/photos/6515532d9dff042c1f41c304/16:9/w_2560%2Cc_limit/GettyImages-1696088232.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h1 {
+  font-weight: var(--weight-m);
+  line-height: var(--line-height);
+}
+h1,
+p {
+  margin-top: var(--rem-standard);
+  margin-bottom: 0.5rem;
+}
+
+/*layout form*/
+form {
+  background-color: var(--color-darkblue);
+  max-width: 700px;
+  min-width: 400px;
+  width: 60vw;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: var(--rem-0-25);
+  box-shadow: 0 0 10px 1px rgba(136, 149, 1, 0.624);
+}
+
+input,
+select,
+textarea {
+  width: var(--size-xl);
+  padding: 4px;
+  border: 0.5rem solid #ffffff;
+  border-radius: var(--rem-0-25);
+  margin-bottom: var(--rem-standard);
+}
+.text-center {
+  text-align: center;
+}
+.form-set {
+  padding: 10px 30px;
+  border: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: unset;
+  margin: 0 var(--rem-standard) / 2 0 0;
+  min-height: var(--rem-0-25) + var(--rem-standard);
+  min-width: 2 * var(--rem-standard);
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: var(--rem-standard) / 4 0;
+}
+input[type="submit"] {
+  background-color: rgb(47, 170, 47);
+  padding: 10px;
+  border-color: rgb(47, 170, 47);
+  transition: background-color 0.2s ease-in, color 0.1s ease-in-out;
+}
+
+textarea {
+  max-width: 600px;
+  min-width: 200px;
+}
+
+input:invalid + span:after {
+  content: "❌";
+  padding-top: 10px;
+}
+input:valid + span:after {
+  content: "✔️";
+  margin-top: 10px;
+}
+input:invalid {
+  border: 1px red solid;
+}
+input:valid {
+  border: 1px green solid;
+}
+/*media queries*/
+
+.submit:hover {
+  background-color: var(--background-primary-alt);
+  border: var(--background-primary-alt) 1px solid;
+  color: #fff;
+  transform: scale(105%);
+  cursor: pointer;
+}
+.italic {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}

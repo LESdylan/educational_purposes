@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gestion du son</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="myAudio" src="./OttoHalmn-OttosCreativeCommonsTracks-01AirshipThunderchild.mp3"></audio>
+    <div class="btns">
+        <a href="javascript:void(0)" onclick="audioControl(0)" class="btn">play</a>
+        <a href="javascript:void(0)" onclick="audioControl(1)" class="btn">pause</a>
+        <a href="javascript:void(0)" onclick="audioControl(2)" class="btn active">reset</a>
+    </div>
+    <script>
+
+        const btns = document.querySelectorAll(".btn");
+        const audio = document.querySelector("#myAudio");
+        let audioControl = (x) => {
+            for (let btn of btns) {
+                btn.classList.remove("active");
+            }
+            btns[x].classList.add("active");
+
+            if (x === 0) {
+                audio.play();
+            }
+            if (x === 1) {
+                audio.pause(); // Corrected: added parentheses to call the function
+            }
+            if (x === 2) { // Corrected: changed from 3 to 2
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        };
+        
+        
+//créer une variable guess qui contient un nombre,. l'utilisateur doit essayer de deviner le nmbre.
+//si l'utilisateur réussit, on lui annonce
+//s'il perd, on le ui dit également
+
+        </script>
+</body>
+</html>

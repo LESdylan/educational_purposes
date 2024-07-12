@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/* MAIN.sass
+ *
+ * Fichier principal qui va importer les autres fichiers.  
+ * Stucture 7 - 1 = un fichier qui gère 7 dossiers. 
+ * L'ordre des imports : 
+ * - reset
+ * - vendors
+ * - pages
+ * - themes
+ * - layout
+ * - components*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes twinkleAnimation {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animation-rotate {
+  0% {
+    transform-origin: -180px 50px;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: -180px 50px;
+    transform: rotate(360deg);
+  }
+}
+@keyframes animation-rotate2 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateSun {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0 0 25px 15px #ff4500, 0 0 40px 20px #ff8c00;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 20px 10px #ff4500, 0 0 10px 15px #ff8c00;
+  }
+}
+@keyframes rotate-planet {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* TAILLE DES PLANÈTES
+ *
+ * taille de la terre c'est 100px de diamètre
+ * calculer la taille des autres : 
+ * mercure : 2.6 plus petite
+ * venus : 1.1 plus petite
+ * */
+.galaxy {
+  background: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  gap: 80px;
+  margin-left: calc(50vw - 100px);
+}
+
+.planet--mercury {
+  border-radius: 100%;
+  width: 38.4615384615px;
+  height: 38.4615384615px;
+  background-image: url("../images/mercury.svg");
+  flex-shrink: 0;
+}
+.planet--venus {
+  border-radius: 100%;
+  width: 90.9090909091px;
+  height: 90.9090909091px;
+  background-image: url("../images/venus.svg");
+  flex-shrink: 0;
+}
+.planet--earth {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/earth.svg");
+  flex-shrink: 0;
+}
+.planet--mars {
+  border-radius: 100%;
+  width: 52.6315789474px;
+  height: 52.6315789474px;
+  background-image: url("../images/mars.svg");
+  flex-shrink: 0;
+}
+.planet--jupiter {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/jupiter.svg");
+  flex-shrink: 0;
+}
+.planet--saturn {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/saturn.svg");
+  flex-shrink: 0;
+  border-radius: 0;
+  animation: none;
+}
+.planet--uranus {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/uranus.svg");
+  flex-shrink: 0;
+  border-radius: 0;
+  animation: none;
+}
+.planet--neptune {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/neptune.svg");
+  flex-shrink: 0;
+}
+.planet .rotate-planet {
+  animation: rotate-planet 1s linear infinite;
+}
+.planet--mercury {
+  animation: animation-rotate 10s linear infinite alternate, rotate-planet 1s linear infinite;
+}
+.planet--venus {
+  animation: animation-rotate 5s linear infinite alternate, rotate-planet 1s linear infinite;
+}
+.planet--earth {
+  position: relative;
+}
+.planet--mars {
+  position: relative;
+}
+
+.satellite, .satellite--deimos, .satellite--phobos, .satellite--moon {
+  background-color: red;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% -50%;
+  color: white;
+}
+.satellite--moon {
+  background-color: grey;
+  transform-origin: 50% calc(50% + 50px);
+  animation: rotate-planet 5s linear infinite;
+}
+.satellite--phobos {
+  background-color: white;
+  transform-origin: 50% calc(50% + 26.3157894737px);
+  animation: rotate-planet 5s linear infinite;
+}
+.satellite--deimos {
+  background-color: orange;
+  transform-origin: 50% calc(50% + 26.3157894737px);
+  animation: rotate-planet 2s linear infinite;
+}
+
+.sun {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/sun.svg");
+  flex-shrink: 0;
+  animation: rotateSun 2s linear infinite;
+}
+
+.wrap {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  animation: rotateSun 5s linear infinite;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.star.twinkle {
+  animation: twinkleAnimation 1s infinite alternate;
+}/*# sourceMappingURL=main.css.map */

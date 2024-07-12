@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+
+commit 1
+commit 2
+un essaie sur le file.txt depuis la branche main
+//new
+commit essaie numéro 1
+commit-essai 2
+commit-essaie 3
+

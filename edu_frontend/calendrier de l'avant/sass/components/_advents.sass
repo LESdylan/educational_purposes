@@ -1,0 +1,23 @@
+@use "../_abstracts-custom/_all" as all
+
+.advent
+    display: grid
+    height: 100vh
+    grid-template-columns: repeat(5, 1fr)
+    grid-template-rows: auto
+    gap: 1rem
+
+    &__box
+        @include all.flex-center()
+        
+    &__number
+        background: url("/images/fond-paquet.jpg")
+        aspect-ratio: 1 / 1
+        height: 100%
+        border-radius: 35% 35% 0% 0%
+        background-size: cover
+        font-family: 'nabla', sans-serif
+        color: hsl(10, 75,  50)
+        font-size: 5rem
+        @include all.flex-center()
+        

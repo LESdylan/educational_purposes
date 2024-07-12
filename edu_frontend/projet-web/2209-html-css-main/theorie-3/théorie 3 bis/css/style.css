@@ -1,0 +1,25 @@
+/*vérifier le lien avec le HTML*/
+body{
+    background-color: aqua;}
+    /*stylisation de textes*/
+h1{
+    background-color: grey;    
+    text-align: center}
+p{
+    background-color: black;
+    color: white;
+    text-center: right}
+
+.right{
+    text-align: right
+
+}
+.left{
+    text-align:left
+}
+
+
+
+
+
+/*FLEX*/

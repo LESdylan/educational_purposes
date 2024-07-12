@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="title">Mortgage Calculator</h1>
+    <p class="clear">Clear All </p>
+  </header>
+  <main>
+  <form action="" method="get" class="form">
+    <fieldset class="form-group">
+      <label id="label-loan" for="loan-amount">Mortgage Amount
+        <input type="number" title="put the loan you wish" name="Mortgage amount" />
+      </label>
+    </fieldset>
+    <fieldset class="form-group">
+      <label id="label-year">Mortgage term
+        <input type="number" title="number of years desired" name="Mortgage term" />
+      </label>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label id="label-interest">Interest Rate
+        <input type="number" title="the due" name="Interest Rate" />
+      </label>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <legend>Mortgage Type</legend>
+      <label class="pad" id="label-repayment">
+        <input type="radio" name="Mortgage Type" />
+        Repayment</label>
+      </label>
+      <label class="pad" id="label-interest">
+        <input type="radio" name="Mortgage Type" />
+        Interest Only
+      </label>
+    </fieldset>
+    <fieldset>
+      <input type="submit" value="Calculate Repayments" />
+    </fieldset>
+  </form>
+</main>
+  <footer>
+    <h2>Your results</h2>
+    <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and
+      click "calculate repayments" again</p>
+    <div class="card">
+      <p>Your monthly repayments</p>
+      <span class="month-payment">€1,797,74</span>
+      <hr>
+      <p>Total you'll repay over the term</p>
+      <span class="total-debt">€539,322,94</span>
+    </div>
+  </footer>
+</body>
+</html>

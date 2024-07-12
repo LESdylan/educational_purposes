@@ -1,0 +1,89 @@
+/*
+Micro-interaction questions of bases
+> TRIGGER : quand? click ?, hover?
+> RULES : each element clickable must get an animation of hovering
+*/
+
+body {
+  background-color: rgb(0, 0, 0);
+  display: 
+  /*transition-property: background-color;
+  transition-duration: 1s;
+  transition-delay: 2s;
+  transition-timing-function: linear;*/
+  transition: background-color 1s 0s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.blink-color {
+  color: rgb(12, 12, 49);
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
+}
+div {
+  width: 100%;
+  position: relative;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  animation-name: slide;
+  background-color: rgba(255, 255, 255, 0.823);
+  box-shadow: 0px 0px 00px 100px rgba(238, 237, 233, 0.353);
+  border-radius: 50%;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  0% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+
+  100% {
+    color: gold;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  50% {
+    border-radius: 50%;
+    transform: translateY(50%);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    left: 100%;
+    border-radius: 100%;
+  }
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  flex-direction: column;
+  background-image: url(https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp);
+}
+
+a{
+  color: inherit
+}

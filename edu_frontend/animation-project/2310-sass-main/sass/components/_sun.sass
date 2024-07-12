@@ -1,0 +1,15 @@
+@use "../abstracts/_all" as abstracts
+
+.sun
+    $background: "../images/sun.svg"
+    @include abstracts.circle(abstracts.$sun-size, $background)
+    animation: rotateSun 2s linear infinite
+
+
+.wrap
+    width: 200px  // ajustez selon la taille de votre SVG
+    height: 200px // ajustez selon la taille de votre SVG
+    display: flex
+    justify-content: center
+    align-items: center
+    animation: rotateSun 5s linear infinite
