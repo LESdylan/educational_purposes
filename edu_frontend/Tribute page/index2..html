@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+
+  a {
+    position: relative;
+    padding: 20px;
+    background-color: black;
+    border: purple solid 2px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    background-color: purple;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+    border-radius: 15px;
+    transition: top 2s ease;
+  }
+
+  a:hover::before {
+    top: 0;
+  }
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Fill Effect</title>
+</head>
+
+<body>
+  <a href="#" class="vertical-fill">Hover over me</a>
+</body>
+
+</html>
