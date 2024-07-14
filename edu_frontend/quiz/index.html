@@ -10,69 +10,116 @@
 </head>
 
 <body>
-  <header class="flex-between-center">
+  <header>
     <img id="logo" alt="freeCodeCamp" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
     <h1>HTML/CSS Quiz</h1>
     <nav>
-      <ul class="flex-between-center">
-        <li><a href="#">INFO</a></li>
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
+      <ul>
+        <li><a href="#info">INFO</a></li>
+        <li><a href="#HTML">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
       </ul>
     </nav>
-
-
   </header>
+
+
+
+
+
+
+
   <form>
-    <h2>Student Info</h2>
-    <label for="student_name">Name:
-      <input type="text" id="student_name" placeholder="Jean michel" name="full name" required>
-    </label>
-    </div>
-    <div class="info">
-      <label for="student_email">email:
+
+
+    <section role="region" aria-labelledby="Student Info">
+      <h2 id="info">Student Info</h2>
+      <div class="info indent">
+        <label for="student_name">Name:</label>
+        <input type="text" id="student_name" placeholder="Jean michel" name="full name" required>
+      </div>
+      <div class="info indent">
+        <label for="student_email">Email:</label>
         <input type="email" id="student_email" placeholder="email">
-      </label>
-    </div>
-    <div class="info">
-      <label for="dob">D.O.B.:
-        <input type="date" name="date of birthday">
-      </label>
-    </div>
-    <h2>HTML</h2>
-    <h3>1</h3>
-    <fieldset class="question-block">
-      <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
-      <label>
-        <input type="radio" />
-      </label>
-      <label>
-        <input type="radio" />
-      </label>
-    </fieldset>
-    <fieldset class="question-block">
-      <h3>2</h3>
-      <legend>A label element nesting an input element is required to have a for attribute witht the same value ass the
-        input's id</legend>
-      <label>
-        <input type="radio" />
-      </label>
-      <label>
-        <input type="radio" />
-      </label>
-    </fieldset>
-    <h2>CSS</h2>
-    <fieldset>
-      <label>Can the CSS property accept negative values ?</label>
-      <select>
-        <option>Select an option</option>
-        <option>Yes</option>
-        <option>No</option>
-      </select>
-    </fieldset>
-    <fieldset>
-      <input type="submit" value="Send">
-    </fieldset>
+      </div>
+      <div class="info indent">
+        <label for="dob">D.O.B.:</label>
+        <input type="date" name="date of birthday" id="dob">
+      </div>
+    </section>
+
+
+
+    <section role="region" aria-labelledby="HTML" id="quiz">
+      <h2 id="HTML">HTML</h2>
+      <div class="question-block">
+        <h3>1</h3>
+        <fieldset class="question indent">
+          <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
+          <ul>
+            <li>
+              <label for="q1-a1" class="list-quiz">
+                <input type="radio" id="q1-a1" name="q1" value="True" />
+                True
+              </label>
+            </li>
+            <li>
+              <label for="q1-a2" class="list-quiz">
+                <input type="radio" id="q1-a2" name="q1" value="False" />
+                False
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="question-block">
+        <h3>2</h3>
+        <fieldset class="question indent">
+          <legend>A label element nesting an input element is required to have a for attribute witht the same value ass
+            the
+            input's id</legend>
+          <ul>
+            <li><label for="q2-a1">
+                <input type="radio" id="q2-a1" name="q2" value="True" />
+                True
+              </label>
+            </li>
+            <li>
+              <label for="q2-a2">
+                <input type="radio" id="q2-a2" name="q2" value="False" />
+                False
+              </label>
+            </li>
+          </ul>
+
+
+        </fieldset>
+      </div>
+
+
+    </section>
+
+
+
+
+    <section role="region" aria-labelledby="css questions">
+      <h2 id="css">CSS</h2>
+      <fieldset class="indent">
+        <label for="yes/no">Can the CSS property accept negative values ?</label>
+        <select required id="yes/no" name="yes-no questions">
+          <option value="" disabled>Select an option</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </fieldset>
+      <div class="question-block">
+        <fieldset class="indent">
+          <legend class="margin-unset">Do you have any questions</legend>
+          <textarea cols="20" rows="5" placeholder="who is flexbox..."></textarea>
+        </fieldset>
+      </div>
+    </section>
+    <input type="submit" value="Send">
   </form>
   <footer>
     <i><a href="freecodecamp">Free Code Camp</a></i>
