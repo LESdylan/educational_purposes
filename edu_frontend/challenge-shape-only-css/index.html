@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #EDAF38;
+      height: 100vh;
+    }
+
+    .shape {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      border-top: 190px solid #FFFFCD;
+      border-bottom: 0px solid #FFFFCD;
+      border-right: transparent 92px solid;
+      border-left: transparent 92px solid;
+      top: 80px;
+      transform: scale(75%);
+      border-radius: 10%;
+    }
+
+    .ear {
+      border-top-width: 0px;
+      border-bottom-width: 60px;
+      border-right-width: 31px;
+      border-left-width: 31px;
+      transform: scale(100%);
+      border-radius: 20%;
+    }
+
+    .eye {
+      border-top-color: #EDAF38;
+      border-right-width: 96px;
+      border-left-width: 96px;
+      transform: scale(19%);
+      border-radius: 20%;
+    }
+
+    .l {
+      top: -255px;
+      left: 30px;
+    }
+
+    .r {
+      top: -255px;
+      left: -91px;
+    }
+
+    .l2 {
+      left: -120px;
+      top: -230px;
+    }
+
+    .r2 {
+      left: -70px;
+      top: -230px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="shape">
+    <div class="shape ear l"></div>
+    <div class="shape ear r"></div>
+    <div class="shape eye l2"></div>
+    <div class="shape eye r2"></div>
+  </div>
+</body>
+
+</html>

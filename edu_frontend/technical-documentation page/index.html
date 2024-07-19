@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="sticky-header-container">
+    <img class="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo" />
+    <nav class="main-nav" aria-label="main-menu">
+      <ul class="main-menu">
+        <li class="top-level-entry-container">
+          <a class="nav-link top-level-entry menu-link" href="#introduction">References</a>
+        </li>
+        <li class="top-level-entry-container">
+          <a class="nav-link top-level-entry menu-link" href="#introduction">Guides</a>
+        </li>
+        <li class="top-level-entry-container">
+          <a class="nav-link top-level-entry menu-link" href="#introduction">Plus</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-search">
+      <form action="/en-US/search" class="search-form search-widget" id="top-nav-search-form" role="search">
+        <label id="top-nav-search-label" for="top-nav-search-input" aria-hidden="true" class="visually-hidden">MDN
+          search</label>
+        <input for="top-nav-search-label" type="search" aria-labelledby="top-nav-search-label"
+          class="search-input-field" name="search" placeholder="   " required id="top-nav-search-input">
+        <button type="submit" class="button action search button">
+          <span class="icon-search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-search">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg></span>
+          <span class="visually-hidden" aria-hidden="true">Search</span>
+        </button>
+      </form>
+    </div>
+  </header>
+  <div class="main-wrapper">
+    <div class="sidebar-container">
+      <aside id="sidebar-quicklinks" class="sidebar" aria-labelledby="Related topics">
+        <nav id="navbar" aria-label="Related Topics" class="sidebar-inner">
+          <header class="sidebar-actions">
+            <section class="sidebar-filter-container">
+              <div class="sidebar-filter"></div>
+            </section>
+          </header>
+          <!--".sidebar-inner-nav" and ".document-toc-container" are in the same place when screen is average but separated from one side to another when "-->
+          <div class="sidebar-inner-nav">
+            <div class="in-nav-toc">
+              <!--toc right side when larger screen-->
+            </div>
+            <div class="sidebar-body">
+              <ol>
+                <li class="section"><a href="section1">section1</a></li> <!--if class se to section it's linkable-->
+                <li class="section"><a href="section1">section1</a></li>
+                <!--autant de section que l'on veut, ce sont les parents head-->
+                <li class="toggle">
+                  <details open> <!--open or close, it's just an attribute-->
+                    <summary>Part of Speech</summary><!--::marker-->
+                    <ol>
+                      <li><a class="nav-link" href="#nouns">nouns</a></li>
+                      <li><a class="nav-link" href="#Verbs">Verbs</a></li>
+                      <li><a class="nav-link" href="#adjectives">adjectives</a></li>
+                      <li><a class="nav-link" href="#adverbs">adverbs</a></li>
+                      <li><a class="nav-link" href="#pronouns">pronouns</a></li>
+                      <li><a class="nav-link" href="#prepositions">prepositions</a></li>
+                      <li><a class="nav-link" href="#prepositions">prepositions</a></li>
+                      <li><a class="nav-link" href="#conjunctions">#conjunctions</a></li>
+                      <li><a class="nav-link" href="#interjections">interjections</a></li>
+                    </ol>
+                  </details>
+                </li>
+                <li class="toggle">
+                  <details open>
+                    <summary>Sentence Structure</summary>
+                    <ol>
+                      <li><a class="nav-link" href="#subject_and_predicate">Subject And Predicate</a></li>
+                      <li><a class="nav-link" href="#types_of_sentences">types of Sentences (Declarative,
+                          Interrrogative,
+                          Imperative, Exclamatory)</a></li>
+                      <li><a class="nav-link" href="#phrases_and_clauses">Phrases and Clauses</a></li>
+                    </ol>
+                  </details>
+                </li>
+                <li class="toggle">
+                  <details open>
+                    <summary>punctuation</summary>
+                    <ol>
+                      <li><a class="nav-link" href="#periods_and_commas">Periods and Commas</a></li>
+                      <li><a class="nav-link" href="#secmicolons_and_colons">Semicolons and Colons</a></li>
+                      <li><a class="nav-link" href="#apostrophes">Apostrophes</a></li>
+                      <li><a class="nav-link" href="quotation Marks">quotation Marks</a></li>
+                      <li><a class="nav-link" href="Hyphens_and_dashes"> hyphens_and_dashes</a></li>
+                    </ol>
+                  </details>
+                </li>
+                <li class="toggle">
+                  <details open>
+                    <summary>Sentences Mechanics</summary>
+                    <ol>
+                      <li><a class="nav-link" href="capitalization rules">Capitalization rules</a></li>
+                      <li><a class="nav-link" href="sentences_fragments">Sentences Fragments</a></li>
+                      <li><a class="nav-link" href="run-on_sentences">Run-On Sentences</a></li>
+                      <li><a class="nav-link" href="subject_verb_agreement">Subject-Verb Agreement</a></li>
+                    </ol>
+                  </details>
+                </li>
+                <li class="toggle">
+                  <details open>
+                    <summary>Common Grammar Errors</summary>
+                    <ol>
+                      <li>
+                        <a class="nav-link" href="Misplaces_and_dangling_modifiers">Misplaced and Dangling Modifiers</a>
+                        <a class="nav-link" href="double_negatives">Double Negatives</a>
+                        <a class="nav-link" href="parallelism">Parallelism</a>
+                      </li>
+                    </ol>
+                  </details>
+                </li>
+                <li class="toggle">
+                  <details open>
+                    <summary>Style and Clarity</summary>
+                    <ol>
+                      <li><a class="nav-link" href="#active_vs_passive-voice">active vs Passive Voice</a></li>
+                      <li><a class="nav-link" href="#clarity_and_conciseness">Clarity and Conciseness</a></li>
+                      <li><a class="nav-link" href="#sentence_and_variety">Sentence and Variety</a></li>
+                    </ol>
+                  </details>
+                </li>
+                <li class="toggle">Layout CookBook
+                  <ol>
+                    <li><a class="nav-link" href="#usecase1">useCase1</a></li>
+                    <li><a class="nav-link" href="#usecase2">userCase2</a></li>
+                    <li><a class="nav-link" href="#usecase4">useCase3</a></li>
+                    <li><a class="nav-link" href="#usecase5">useCase3</a></li>
+                    <li><a class="nav-link" href="#usecase6">useCase4</a></li>
+                  </ol>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </nav>
+      </aside>
+      <div class="toc-container">
+        <aside class="toc" aria-labelledby="in_this_article">
+          <nav aria-labelledby="in_this_article">
+            <div class="document-toc-container">
+              <section class="document-toc">
+                <div class="wrapper">
+                  <h2 class="docment-toc-heading" id="in_this_article">In this article</h2>
+                  <ul class="document-toc-list">
+                    <li class="document-toc-item"><a class="nav-link document-toc-link" aria-current="true"
+                        href="#link1">link1</a></li>
+                    <li class="document-toc-item"><a class="nav-link document-toc-link" href="#present-perfect"
+                        aria-current="true">present-perfect</a></li>
+                    <li class="document-toc-item"><a class="nav-link document-toc-link" href="#link3">link3</a></li>
+                    <li class="document-toc-item"><a class="nav-link document-toc-link" href="#link4">link4</a></li>
+                    <li class="document-toc-item"><a class="nav-link document-toc-link" href="#link5">link5</a></li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </nav>
+        </aside>
+      </div>
+    </div>
+    <!--content the page documentation-->
+    <main id="main-doc" class="main-content">
+      <section>
+        <header>
+          <h2 id="introduction">Introduction</H2>
+        </header>
+        <p><span>Ladies and gentlemen</span>, language enthusiasts, and grammar aficionados, welcome to our delightful
+          dive into the
+          depths of the English language! Today, we’re going to tackle a tense that’s as perfect as a well-brewed cup of
+          coffee—yes, I’m talking about the Present Perfect!</p>
+        <p><span>Now, you might be wondering</span>, what’s so special about the Present Perfect? Well, imagine it as
+          the time
+          machine of tenses—it connects the past with the present in a way that’s just...perfect! Have you ever felt
+          like the past is still lingering around, just like that one sock that always goes missing in the laundry?
+          That’s the Present Perfect for you. It’s the tense that’s been bringing the past into the present
+          since...well, forever!</p>
+        <p><span>We'll explore how it works</span>, why it’s used, and we might even uncover some perfect examples along
+          the way. By
+          the end of this lecture, you’ll have mastered the art of using the Present Perfect in ways that would make
+          Shakespeare himself green with envy—or perhaps we should say, "you will have mastered," because by then, it
+          will be something you’ve accomplished.</p>
+        <p><span>So, get ready to have your linguistic skills perfectly polished</span>, and remember, if grammar had a
+          Hall of Fame,
+          the Present Perfect would have been inducted long ago! Let's dive in and see how the past has perfectly shaped
+          our present language use.</p>
+      </section>
+      <article class="main-page-content" lang="en-US">
+        <header>
+          <h2 id="present-perfect">present/perfect</h2>
+        </header>
+        <div class="section-content">
+          <p>Le présent parfait (Present Perfect) est un temps verbal en anglais qui est utilisé pour exprimer des
+            actions ou des événements qui ont une relation avec le présent. C'est un temps qui lie le passé et le
+            présent, souvent utilisé pour décrire des expériences, des actions qui ont des résultats dans le présent, ou
+            des événements récents.</p>
+        </div>
+        <article class="main-section" id="syntax" aria-labelledby="syntax">
+          <header>
+            <h2 id="syntax">Syntax</h2>
+          </header>
+          <div class="section-content">
+            <p>Le présent parfait se forme avec l'auxiliaire "have" (ou "has" pour la troisième personne du singulier)
+              suivi du participe passé du verbe principal.</p>
+            <ol>
+              <li class="highlight">Sujet+have/has+participe passé</li><!--::marker-->
+            </ol>
+          </div>
+          <div class="code-example">
+            <div class="example-header play-sample">
+              <h3>Cow presentation</h3>
+              <button type="submit" class="code-button"><a
+                  href="https://developer.mozilla.org/en-US/play">Play</a></button>
+            </div>
+            <pre>
+              <code>
+                <span class="token punctuation">dl</span>;
+                Firefox 
+                <span class="token punctuation">dd</span>A free, open source, cross-platform, graphical web browser developed by theMozilla Corporation and hundreds of volunteers.<span class="token punctuation">/dd</span>
+                <span class="token punctuation">Components--</span>
+                <span class="token punctuation">/dl</span>
+                ________________________________________________
+
+                &lt; "I'm an expert in my field" &gt;
+                -------------------------------------------------
+                            \   ^__^
+                             \  (oo)\___________
+                              \ (__)\            )\/\
+                                     ||          |
+                                     ||--------w |
+                                     ||         ||
+                &lt;/dl&gt;
+              </code>
+            </pre>
+          </div>
+        </article>
+        <section class="main-section" aria-labelledby="exemples" id="exemples">
+          <header>
+            <h2 id="exemples">Exemples</h2>
+          </header>
+
+          <div class="section-content">
+            <p></p>
+            <ol>
+              <li>I have visited Paris. (J'ai visité Paris.)</li><!--::marker-->
+              <li>She has finished her homework. (Elle a fini ses devoirs.)</li>
+            </ol>
+          </div>
+        </section>
+        <section class="main-section" aria-labelledby="specifications" id="specifications">
+          <header>
+            <h2 id="specifications">specifications</h2>
+          </header>
+          <div class="section-content">
+            <dl>
+              <dt>Ever</dt>
+              <dd>Have you ever been to London? (Es-tu déjà allé à Londres ?)</dd>
+              <dt>Never</dt>
+              <dd>used for experiences that have never been experienced.</dd>
+              <dt>Just</dt>
+              <dd>Used for actions very recent</dd>
+              <dt>Already</dt>
+              <dd>Used for any type of actions that had happened earlier than expected</dd>
+              <dt>Yet</dt>
+              <dd>Used in questions and negative sentences</dd>
+            </dl>
+          </div>
+        </section>
+        <section class="main-section" aria-labelledby="try_it" id="try_it">
+          <header>
+            <h2 id="try_it">try it</h2>
+          </header>
+          <div class="section-content">
+            <p></p>
+            <form>
+              <ol>
+                <h3>conjugate the following verb to present perfect</h3>
+                <li><label>She <span class="verb-style">(to visit)</span><input type="text" id="q1-a1" name="q1-a1"
+                      placeholder=" write here!" required /> many countries </label></li><!--::marker-->
+                <li><label>They <span class="verb-style">(to finish)</span><input type="text" id="q1-a2" name="q1-a2"
+                      placeholder=" write here!" required /> their project</label></li><!--::marker-->
+                <li><label>He <span class="verb-style">(to break)</span><input type="text" id="q1-a3" name="q1-a3"
+                      placeholder=" write here!" required /> his arm</label></li><!--::marker-->
+                <li><label>We <span class="verb-style">(to eat)</span><input type="text" id="q1-a4" name="q1-a4"
+                      placeholder=" write here!" required /> breakfast already</label></li><!--::marker-->
+                <li><label>You <span class="verb-style">(to see)</span><input type="text" id="q1-a5" name="q1-a5"
+                      placeholder='write here' required /> this movie before</label></li><!--::marker-->
+              </ol>
+
+              <ol>
+                <h3>complete the following statements with "just", "already", "ever", "never", "yet"</h3>
+                <li><label>Have you <input type="text" id="q2-a1" name="q2-a1" placeholder=" write here!" required />
+                    been to Australia? </label></li><!--::marker-->
+                <li><label>I have<input type="text" id="q2-a2" name="q2-a2" placeholder=" write here!" required />
+                    finished my assignement</label></li><!--::marker-->
+                <li><label>she has<input type="text" id="q2-a3" name="q3-a3" placeholder=" write here!" required /> met
+                    a celebrity</label></li><!--::marker-->
+                <li><label>The have<input type="text" id="q2-a4" name="q4-a4" placeholder=" write here!" required />
+                    arrived.</label></li><!--::marker-->
+                <li><label>I haven't done my homework<input type="text" id="q2-a5" name="q5-a5" placeholder='write here'
+                      required /></label></li><!--::marker-->
+              </ol>
+              <button type="submit">ready?</button>
+            </form>
+          </div>
+          <div class="visually-hidden" aria-hidden="true">
+            <ul>
+              <li>she has visited many countries</li>
+              <li>They have finished their project.</li>
+              <li>He has broken his arm.</li>
+              <li>We have eaten breakfast already.</li>
+              <li>You have seen this movie before.</li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-section" aria-labelledby="see_also" id="see_also">
+          <header>
+            <h2 id="see_also">See also</h2>
+          </header>
+
+          <div class="section-content">
+            <p></p>
+            <ol>
+              <li></li><!--::marker-->
+            </ol>
+          </div>
+        </section>
+      </article>
+      <div class="callout">
+        <div class="callout-icon" title="ancher">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-anchor">
+            <path d="M12 22V8" />
+            <path d="M5 12H2a10 10 0 0 0 20 0h-3" />
+            <circle cx="12" cy="5" r="3" />
+          </svg>
+          <div class="whitespace"></div>
+        </div>
+        <div class="callout-content">
+          <p>
+            Certains mots et expressions sont fréquemment utilisés avec le Present Perfect. Apprendre ces indicateurs
+            peut vous aider à identifier quand utiliser ce temps.
+            Certains mots et expressions sont fréquemment utilisés avec le Present Perfect. Apprendre ces indicateurs
+            peut vous aider à identifier quand utiliser ce temps.
+            Certains mots et expressions sont fréquemment utilisés avec le Present Perfect. Apprendre ces indicateurs
+            peut vous aider à identifier quand utiliser ce temps.
+            Certains mots et expressions sont fréquemment utilisés avec le Present Perfect. Apprendre ces indicateurs
+            peut vous aider à identifier quand utiliser ce temps.
+            Certains mots et expressions sont fréquemment utilisés avec le Present Perfect. Apprendre ces indicateurs
+            peut vous aider à identifier quand utiliser ce temps.
+            Certains mots et expressions sont fréquemment utilisés avec le Present Perfect. Apprendre ces indicateurs
+            peut vous aider à identifier quand utiliser ce temps.
+            Certains mots et expressions sont fréquemment utilisés avec le Present Perfect. Apprendre ces indicateurs
+            peut vous aider à identifier quand utiliser ce temps.
+            Certains mots et expressions sont fréquemment utilisés avec le Present Perfect. Apprendre ces indicateurs
+            peut vous aider à identifier quand utiliser ce temps.
+          </p>
+        </div>
+      </div>
+    </main>
+    <!--sidebar right toc sticky-->
+
+  </div>
+
+
+</body>
+
+
+</html>

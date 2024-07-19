@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+:root {
+  /*color schema*/
+  --improve-english--color-white: #fff;
+  --improve-english--color-black: #000;
+  --improve-english-text-secondary: #cdcdcd;
+  --improve-english--color-background-highlight: #f0e498;
+  --improve-english--color-dark-gray: #4e4e4e;
+  --improve-english--background-dark: #1b1b1b;
+  --improve-english-background-light: #fff;
+  --mdn-background-light-gray: #e2e2e2;
+  --accent-color: var(--accent-primary);
+  --text-primary: var(--improve-english--color-white);
+  /*CALLOUTS*/
+  --background-color: var(--callout-color);
+  --callout-radius: var(--elem-radius);
+  --callout-icon-info: #5e9eff;
+  --callout-icon-success: #00b755;
+  --callout-icon-exemple: #5e50ff;
+  --callout-icon-warning: #afa100;
+  --callout-icon-important: #ff707f;
+  --callout-icon-tip: #9e0027;
+  --background-callout-warning: #c7b70066;
+  --background-mark-green: #00d06166;
+  --background-information: #0085f21a;
+  --background-warning: #ff2a511a;
+  --background-critical: #d30038;
+  --background-success: #0079361a;
+  --background-del: #d3003880;
+  --background-ins: #00793680;
+  /*FONT*/
+  /*FONT-FAMILY*/
+  --font-fallback: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", sans-serif;
+  --font-body: Inter, var(--font-fallback);
+  --font-heading: Inter, var(--font-fallback);
+  /*font-size*/
+  --base-font-size: 100%;
+  --type-heading-h1-font-size: 2.488rem;
+  --type-heading-h2-font-size: 2.074rem;
+  --type-heading-h3-font-size: 1.728rem;
+  --type-heading-h4-font-size: 1.44rem;
+  --type-heading-h5-font-size: 1.2rem;
+  --type-base-font-size-rem: var(--size-base);
+  --type-smaller-font-size: 0.833rem;
+  --type-tiny-font-size: 0.694rem;
+  --type-heading-h1-font-size-mobile: 1.802rem;
+  --type-heading-h2-font-size-mobile: 1.602rem;
+  --type-heading-h3-font-size-mobile: 1.424rem;
+  --type-heading-h4-font-size-mobile: 1.266rem;
+  /*font-styles*/
+  --font-body-strong-weight: 600;
+  --type-emphasis-m: var(--font-body-strong-weight)
+    var(--type-smaller-font-size) / 1.23 var(--font-body);
+  --type-label-s: 600 var(--type-tiny-font-size) / 1.2 var(--font-heading);
+  --type-heading-h1: 600 var(--type-heading-h1-font-size-mobile) /
+    var(--heading-line-height) var(--font-heading);
+  --type-heading-h2: 500 var(--type-heading-h2-font-size-mobile) /
+    var(--heading-line-height) var(--font-heading);
+  --type-heading-h3: 300 var(--type-heading-h3-font-size-mobile) /
+    var(--heading-line-height) var(--font-heading);
+  --type-heading-h4: 400 var(--type-heading-h4-font-size-mobile) /
+    var(--heading-line-height) var(--font-heading);
+  --type-heading-h5: 400 var(--type-heading-h5-font-size) /
+    var(--heading-line-height) var(--font-heading);
+  --type-heading-h6: 400 var(--type-base-font-size-rem) /
+    var(--heading-line-height) var(--font-heading);
+  --type-article-p: 400 var(--type-base-font-size-rem) /
+    var(--font-content-line-height) var(--font-body);
+  /*spaces*/
+  --base-line-height: 1.2;
+  --intermediate-line-height: 1.5;
+  --heading-line-height: var(--base-line-height);
+  --heading-letter-spacing: -0.031rem;
+  --font-content-line-height: 1.75;
+
+  /*responsive design*/
+  --max-width: 1440px;
+  --gutter: 1rem; /*it's a space between columns that helps separate content., they are fixed valueat each breakpoint rangt o better adatpt to a given screen size*/
+
+  /*overlap el*/
+  --top-navigation-height: 4rem;
+  --top-navigation-offset: -4rem;
+  --top-banner-inner-height: 3.125rem;
+  --top-banner-height: calc(var(--top-banner-inner-height) + 0.25rem);
+  --top-banner-outer-height: calc(var(--top-banner-height) + 2px);
+  /*overlap element*/
+  --z-index-a11y: 10000;
+  --z-index-modal-content: 801;
+  --z-index-modal-overlay: 800;
+  --z-index-main-header: 700;
+  --z-index-sidebar-mobile: 600;
+  --z-index-mid: 500;
+  --z-index-nav-menu: 200;
+  --z-index-search-results: 101;
+  --z-index-low: 100;
+  --z-index-search-results-home: 99;
+  --z-index-back: -1;
+  /*styling element*/
+  --elem-radius: 0.25rem;
+  --focus-effect: 0 0 0 3px var(--accent-primary-engage);
+  --form-elem-height: 2rem;
+  --top-nav-height: 4rem;
+  --size-base: 1rem;
+  --elem-padding: 10px;
+  --elem-margin: 20px;
+
+  --sticky-header-with-actions-height: calc(4px + 1px) + 2rem + 1px;
+  --max-height: calc(100vh - var(--offset));
+  --offset: var(--sticky-header-with-actions-height);
+  /*new variables*/
+}
+/*----------------------------------------------------refactoring--------------------------------------------------*/
+
+/*-----------------------------------------------------reinit-------------------------------------------------------*/
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*-----------------------------------------------------base---------------------------------------------------------*/
+body {
+  background-color: var(--improve-english--background-dark);
+  color: var(--improve-english--color-white);
+  font-family: var(--font-body);
+  line-height: var(--font-content-line-height);
+  text-rendering: optimizeSpeed;
+}
+
+/*-------------------------------------------------------utility class-------------------------------------------------*/
+.visually-hidden {
+  display: none;
+}
+::selection {
+  background-color: var(--callout-icon-exemple);
+  color: var(--improve-english--background-dark);
+}
+
+.highlight {
+  position: relative;
+  display: inline-block;
+  background: var(--callout-icon-important);
+  padding: 5px 5px 5px 30px;
+  border-radius: 5px;
+  color: var(--improve-english--background-dark);
+}
+
+.highlight::before {
+  content: ">";
+  display: block;
+  position: absolute;
+  left: 10px;
+  font-weight: 500;
+}
+/*---------------------------------------------------distribution of spacing----------------------------*/
+/*---------------------------------------------------grid*/
+.main-wrapper {
+  display: grid;
+  gap: 3em;
+  grid-template-areas: "sidebar main toc";
+  grid-template-columns: minmax(200px, 0.7fr) minmax(0, 2.5fr) minmax(0, 0.7fr);
+  padding-left: var(--size-base);
+  padding-right: var(--size-base);
+}
+.main-wrapper > .sidebar-container {
+  display: contents;
+  top: var(--offset);
+  position: sticky;
+  max-height: calc(100vh - var(--offset));
+}
+.main-wrapper > .sidebar-container > .toc-container {
+  grid-area: toc;
+  max-height: var(--max-height) / 5;
+}
+.main-wrapper > .main-content {
+  grid-area: main;
+}
+.main-wrapper > .sidebar-container > .sidebar {
+  color: var(--improve-english--color-white);
+  grid-area: sidebar;
+}
+
+/*---------------------------------------------------flex*/
+.sticky-header-container,
+.sticky-header-container > .main-nav > .main-menu {
+  display: flex;
+  align-items: center;
+}
+.sticky-header-container {
+  justify-content: center;
+  position: sticky;
+  padding: var(--elem-padding);
+  max-height: 50px;
+}
+.sticky-header-container > .main-nav > .main-menu {
+  justify-content: space-evenly;
+  list-style: none;
+}
+.sticky-header-container > .main-nav {
+  flex: 5 0 auto;
+}
+.sticky-header-container > .header-search {
+  flex: 1 1 auto;
+}
+.sticky-header-container > .logo,
+.header-search {
+  max-width: 200px;
+  min-width: 200px;
+}
+
+/*----------------------------------------------------------------little change---------------------------------------------*/
+.main-menu > .top-level-entry-container > .menu-link {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--improve-english--background-dark);
+}
+p {
+  line-height: var(--base-line-height);
+}
+
+.sidebar > ol {
+  font-size: var(--type-smaller-font-size);
+}
+
+/*-----------------------------------------------------------------organization--------------------------------------------*/
+p {
+  margin: 20px 0 20px 20px;
+  line-height: 1.6;
+  letter-spacing: 0.8px;
+  word-spacing: 4px;
+  font-weight: 300;
+}
+p > span {
+  font-weight: 900;
+}
+p,
+a,
+li {
+  font-size: var(--elem-margin);
+}
+/*-----------------------------------------------------styling main nav-bar----------------------------------------------*/
+a[class~="top-level-entry"] {
+  padding: 5px;
+}
+a[class~="top-level-entry"]:hover {
+  background-color: hsl(from var(--callout-icon-info) h s l/ 0.5);
+  color: var(--improve-english--color-dark-gray);
+  border-radius: 3px;
+}
+
+ol > li::marker {
+  background-color: red;
+}
+
+.verb-style {
+  font-weight: var(--font-body-strong-weight);
+}
+
+/*---------------------------------------------------------styling of element--------------------------------------------*/
+.code-example {
+  background-color: #343434;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 20px 0;
+  overflow: auto;
+}
+.token {
+  color: rgb(0, 255, 0);
+}
+.code-button {
+  color: var(--improve-english--color-dark-gray);
+  background: none;
+}
+.code-button:hover {
+  color: var(--callout-icon-important) !important;
+  text-decoration: none;
+}
+.example-header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--improve-english--color-dark-gray);
+}
+code {
+  color: white;
+}
+.token {
+  word-break: break-all;
+}
+.punctuation::before {
+  content: "\003C";
+}
+.punctuation::after {
+  content: "\003E";
+}
+/*-----------------------------------------------------------heading*/
+h1,
+h2 {
+  text-transform: Uppercase;
+  font-weight: 400;
+  text-shadow: 3px 3px 3px var(--callout-icon-exemple),
+    5px 10px 5px rgb(128, 19, 0);
+  margin: 2.5rem 0;
+}
+h1 {
+  font-size: var(--type-heading-h1-font-size);
+}
+h2 {
+  font-size: var(--type-heading-h2-font-size);
+}
+
+h3 {
+  font-size: var(--type-heading-h3-font-size);
+}
+
+/*-------------------------------------------------------------component class------------------------------------------*/
+/*-------------------------------------------------------------button*/
+button {
+  background-color: var(--callout-icon-important);
+  padding: 5px;
+  border: none;
+  margin: 0 var(--size-base);
+  border-radius: 5px;
+}
+
+/*--------------------------------------------------------------callouts*/
+.callout {
+  background: hsl(from var(--background-critical) h s l / 0.2);
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; /* Changed from center to flex-start */
+  border-left: 2px solid var(--improve-english--color-background-highlight);
+  padding: var(--size-base);
+  position: relative;
+  border-radius: 8px 2px 2px 8px;
+}
+
+.callout-icon {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Changed from center to flex-start */
+  flex-shrink: 0; /* Prevent shrinking */
+  margin-right: var(--size-base);
+}
+
+.callout-icon > svg {
+  color: var(--improve-english--color-background-highlight);
+  stroke-width: 3px;
+  width: 24px; /* Define a fixed width */
+  height: 24px; /* Define a fixed height */
+}
+
+.callout-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center; /* Adjust alignment as needed */
+}
+
+.callout-content > p {
+  background-color: transparent;
+  padding: 0rem 0.25rem var(--size-base);
+  overflow-wrap: break-word;
+}
+
+/*-----------------------------------------------------------------styles of website-----------------------------------------------------------*/
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+::-webkit-scrollbar-track {
+  background: var(--improve-english--background-dark);
+}
+
+/*------------------------------------------- Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--improve-english-text-secondary);
+  border-radius: var(--elem-margin);
+}
+
+/*----------------------------------------- Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cdcdcdbb;
+}
+
+ol,
+ul:not(.document-toc-list) {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 1em;
+  margin-inline-end: 1em;
+  padding-inline-start: 1em;
+  list-style: none;
+}
+
+.document-toc-item {
+  list-style: none;
+  padding: 10px;
+  border-left: 0.25rem solid white;
+  padding-left: 30px;
+  margin-left: -0.25rem;
+}
+.document-toc-item:first-child {
+  background-color: hsl(from var(--callout-icon-important) h s l / 0.1);
+  border-left: 0.25rem solid var(--callout-icon-important);
+}
+
+ul {
+  margin-inline-start: 1rem;
+}
+a {
+  color: var(--improve-english-text-secondary);
+  text-decoration: none;
+}
+/*-------------------------------------------------------------pseudo seletor and different effect------------------------------------*/
+ul > li > a:hover {
+  color: hsl(from var(--callout-icon-info) h s l / 0.8);
+}
+a:hover:not(ul > li > a, .code-button) {
+  text-decoration: underline;
+}
+.document-toc-list.document-toc-link:not(aria-current="false") {
+  background: var(--background-critical);
+  border-bottom-right-radius: 0.25rem;
+  border-left: 2px solid var(red);
+  border-top-left-radius: 0.25rem;
+  font-weight: 600;
+}
+/*--------------------------------------------------------------experimetation--------------------------------------------------*/
+.sidebar {
+  position: sticky;
+  overflow: auto;
+  max-height: var(--max-height);
+}
+/*doesn't work*/
+.toc-container {
+  position: sticky;
+  overflow: auto;
+  max-height: 100px;
+}
+/*apply the mask at the bottom of the toc on the left.*/
+.sidebar-container .sidebar {
+  -webkit-mask-image: linear-gradient(180deg, #000 0 calc(100% 3rem), 0000);
+  mask-image: linear-gradient(180deg, #000 0 calc(100% 3rem), 0000);
+}
+
+dl > dt {
+  font-weight: normal;
+  font-style: oblique;
+}
+dd {
+  margin: 0.5rem 1rem;
+}
+
+dt {
+  display: inline-block;
+  background-color: hsl(from var(--callout-icon-exemple) h s l / 0.5);
+  padding: 4px;
+  border-radius: 5px;
+}
